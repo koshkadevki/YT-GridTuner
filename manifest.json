@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube: Количество видео в строке",
+  "version": "1.0",
+  "description": "Позволяет выбрать количество видео в одной строке на YouTube.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"], 
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["storage"],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
